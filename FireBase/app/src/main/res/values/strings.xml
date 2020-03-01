@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FireBase</string>
+    <string name="Reg">Sign Up</string>
+    <string name="Log">Log In</string>
+    <string name="Registration">Registration</string>
+    <string name="Hat">Add user to base</string>
+</resources>

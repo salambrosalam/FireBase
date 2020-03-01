@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hat_container"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Orange">
+
+        <TextView
+            android:id="@+id/hat_of_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/Hat"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/hat_container"
+        android:id="@+id/container_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/aim_of_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/container_2"
+        android:id="@+id/btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/create_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Create" />
+
+        <Button
+            android:id="@+id/show_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Show" />
+    </LinearLayout>
+
+    <ListView
+        android:background="@color/Grey"
+        android:layout_below="@id/btn_container"
+        android:id="@+id/list_of_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/previewbackgroundone"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="749dp"
+            android:layout_height="806dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/db_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/image1">
+
+        <Button
+            android:id="@+id/go_to_reg_btn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:text="@string/Reg" />
+
+        <Button
+            android:id="@+id/go_to_log_btn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:text="@string/Log"
+            android:textSize="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>
